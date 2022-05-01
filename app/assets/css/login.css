@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+	background-color: #2a3e50;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "lato"; 
+	font-size: 16px;
+}
+body .login{
+	background-color: #fff;
+	width: 300px;
+	border-radius: 5px;
+}
+body .login .login_header{
+	position: relative;
+}
+body .login .login_header img{
+	width: 100%;
+	max-width: 100%;
+	border-radius: 5px;
+}
+body .login .login_header p{
+	position: absolute;
+	right: 18px;
+	top: 70px;
+	color: #00b5ad;
+	font-weight: bold;
+	font-size: 20px;
+}
+body .login .login_frm{
+	padding: 10px;
+	padding-bottom: 20px;
+}
+.w100{
+	width: 100% !important;
+}

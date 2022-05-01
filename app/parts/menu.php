@@ -2,6 +2,7 @@
 
 
 //$menu_configuracion = ["dir" => "configuracion", "text" => "CONFIGURACIÓN", "icon" => "bx-cog", "sub" => false];
+/*
 $menu_configuracion = ["dir" => false, "text" => "CONFIGURACIÓN", "icon" => "bx-cog", "sub" => [
 	["subdir" => "config_usuarios", "subtext" => "USUARIOS"],
 	["subdir" => "config_vehiculos", "subtext" => "VEHÍCULOS"],
@@ -42,46 +43,46 @@ switch ($menu_session_type) {
 		$menu_session_status = $menu_session_user;
 		break;
 }
+*/
+
+
 ?>
-<div class="vertical-menu">
-	<div data-simplebar class="h-100">
-		<div id="sidebar-menu">
-			<ul class="metismenu list-unstyled" id="side-menu">
-				<?php
-				foreach ($menu_session_status as &$valor) {
-					$menu_dir = $valor['dir'];
-					$menu_icon = $valor['icon'];
-					$menu_text = $valor['text'];
-					$menu_sub = $valor['sub'];
-					if ($menu_dir) {
-						echo '
-						<li class="mm-active" >
-							<a href="' . $menu_dir . '" class="waves-effect">
-								<i class="bx ' . $menu_icon . '"></i>
-								<span>' . $menu_text . '</span>
-							</a>
-						</li>
-						';
-					} else {
-						echo '
-						<li  class="mm-active"  >
-							<a class="has-arrow waves-effect">
-								<i class="bx ' . $menu_icon . '"></i>
-								<span key="t-tables">' . $menu_text . '</span>
-							</a>
-							<ul class="sub-menu mm-collapse" aria-expanded="false">';
-							foreach ($menu_sub as &$valor) {
-								$menu_sub_dir = $valor['subdir'];
-								$menu_sub_text = $valor['subtext'];
-								echo '<li><a class="active" href="'.$menu_sub_dir.'" >'.$menu_sub_text.'</a></li>';
-							}
-							echo '</ul>
-						</li>
-						';
-					}
-				}
-			?>
-			</ul>
-		</div>
-	</div>
+<div class="menu_items">
+ 	<div class="item">
+		<a href="">
+			<i class="fa fa-desktop" aria-hidden="true"></i>
+		</a>
+	 </div>
+	 <br>
+	 <div class="item">
+		<a href="">
+			<i class="fa fa-th-large" aria-hidden="true"></i>
+		</a>
+	 </div>
+	 <div class="item">
+		<a href="">
+			<i class="fa fa-users" aria-hidden="true"></i>
+		</a>
+	 </div>
+	 <div class="item">
+		<a href="">
+			<i class="fa fa-money" aria-hidden="true"></i>
+		</a>
+	 </div>
+	 <div class="item">
+		<a href="">
+			<i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+		</a>
+	 </div>
+	 <div class="item">
+		<a href="">
+			<i class="fa fa-archive" aria-hidden="true"></i>
+		</a>
+	 </div>
+	 <div class="item">
+		<a href="">
+			<i class="fa fa-envelope-o" aria-hidden="true"></i>
+		</a>
+	 </div>
+		 
 </div>
