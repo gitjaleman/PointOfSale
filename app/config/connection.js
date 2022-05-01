@@ -1,10 +1,5 @@
-const dir_data_local = "http://localhost/server/portrans_api/api/";
-const dir_file_local = "http://localhost/server/portrans_api/file/";
-const dir_data_server = "https://gestioncobranza.com/api/api/";
-const dir_file_server = "https://gestioncobranza.com/api/file/";
-
-const http_data = dir_data_local;
-const http_file = dir_file_local;
+const http_data = "http://localhost/server/portrans_api/api/";
+const http_file = "http://localhost/server/portrans_api/file/";
 
 const FETCH_GET = async (url,get_process) => {
   try {

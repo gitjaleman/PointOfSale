@@ -1,1 +1,4 @@
-$('#item_avatar').dropdown();
+$(document).ready(function(){
+    $('#item_avatar').dropdown();
+});
+
