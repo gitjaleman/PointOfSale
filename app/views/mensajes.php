@@ -1,3 +1,0 @@
-<main>
-    mensajes
-</main>
