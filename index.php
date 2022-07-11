@@ -39,4 +39,7 @@
 <script src="app/assets/js/Semantic-UI-Alert.js"></script>
 <script src="app/actions/login.js"></script>
 
-</html>
+
+
+
+</html> 
