@@ -1,3 +1,7 @@
+<?php 
+  session_start();  
+  session_destroy(); 
+?>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -15,18 +19,18 @@
 <body>
 
 
-  <form class="ui form ">
+  <form id="frm" class="ui form ">
     <img src="app/assets/images/login/login.png">
     <div class="ui left icon input W100 Mb_15">
-      <input type="text" placeholder="Usuario">
+      <input id="frm_input_username" type="text" placeholder="Usuario" required>
       <i class="user icon"></i>
     </div>
     <div class="ui left icon input W100 Mb_15">
-      <input type="text" placeholder="Contraseña">
+      <input id="frm_input_userpass" type="password" placeholder="Contraseña" required>
       <i class="unlock icon"></i>
     </div>
-    <button class="ui violet button W100">IINGRESO</button>
-    <div class="ui loading button W100">Conectando</div>
+    <button id="frm_btn_submit" class="ui violet button W100 frm_btn" style="display: none;">IINGRESO</button>
+    <div id="frm_btn_loading" class="ui loading button W100 frm_btn" style="display: none;">Conectando</div>
   </form>
 
 </body>
